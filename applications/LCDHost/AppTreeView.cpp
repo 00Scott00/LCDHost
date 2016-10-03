@@ -49,7 +49,7 @@ void AppTreeView::currentChanged( const QModelIndex & current, const QModelIndex
     if( app_class_tree )
     {
         QStringList id_list;
-        id_list = app_class_tree->itemFromIndex( current )->data().toStringList();
+        //id_list = app_class_tree->itemFromIndex( current )->data().toStringList();
         if( !id_list.isEmpty() )
         {
             app_class =  AppLibrary::getClass( id_list.first() );
